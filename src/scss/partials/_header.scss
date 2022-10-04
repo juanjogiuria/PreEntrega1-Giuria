@@ -1,0 +1,51 @@
+.header_container {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin-bottom: 15px;
+
+    display: grid;
+    grid-template-columns: 1fr 0.05fr;
+    grid-template-areas: "logo cart"
+        "categories categories";
+
+
+    align-items: center;
+    background-color: #EBE4E7;
+
+
+
+    .class_logo {
+        grid-area: logo;
+        justify-self: center;
+        width: 15%;
+    }
+
+    .class_menu {
+        grid-area: categories;
+        background-color: black;
+
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+
+            a{
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        }
+    }
+
+    .class_cart {
+        grid-area: cart;
+        justify-self: flex-end;
+        padding: 10px;
+    }
+
+
+
+
+}
